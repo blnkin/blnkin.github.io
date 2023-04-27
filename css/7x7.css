@@ -1,0 +1,123 @@
+:root {
+  --color-dark: #212529;
+  --color-lightgray: #adb5bd;
+  --color-darkgray: #495057;
+  --color-darkwhite: #6a97ca;
+}
+
+* {
+  font-family: 'Secular One', sans-serif;
+  cursor: url('../img/curser.png'), auto;
+}
+
+body, html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-dark);
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 5vmin;
+  font-weight: 900;
+  margin: 10px auto 0px;
+  width: 500px;
+  height: fit-content;
+  background-color: var(--color-darkwhite);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: var(--color-dark);
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--color-darkgray);
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60vmin;
+  margin-bottom: 60vmin;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  cursor: url('../img/pointer.png'), auto;
+  font-size: 1.5em;
+  padding: 10px 90px;
+  background-color: var(--color-darkwhite);
+  color: var(--color-dark);
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: var(--color-lightgray);
+}
+
+.box {
+  background-color: var(--color-lightgray);
+  border-radius: 25%;
+  transition: background-color 1s ease;
+}
+
+.box:hover {
+  cursor: url('../img/pointer.png'), auto;
+  background-color: var(--color-darkwhite);
+}
+
+.highlight {
+  background-color: var(--color-darkwhite);
+}
+
+.correct {
+  background-color: #2ECC71;
+}
+
+.incorrect {
+  background-color: #E74C3C;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: center;
+  color: var(--color-darkwhite);
+}
+
+.win {
+  color: #2ECC71;
+}
+
+.lose {
+  color: #E74C3C;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+    <meta charset="UTF-8">
+        <title>Memory Game</title>
+        <link rel="stylesheet" type="text/css" href="./css/home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="title">REMEMBER?</h1>
+        <div class="container">
+            <a class="box" href="3x3.html"><span class="box-number">1</span></a>
+            <a class="box" href="4x4.html"><span class="box-number">2</span></a>
+            <a class="box" href="5x5.html"><span class="box-number">3</span></a>
+            <a class="box" href="6x6.html"><span class="box-number">4</span></a>
+            <a class="box" href="7x7.html"><span class="box-number">5</span></a>
+            <a class="box" href="8x8.html"><span class="box-number">6</span></a>
+            <a class="box" href="9x9.html"><span class="box-number">7</span></a>
+            <a class="box" href="10x10.html"><span class="box-number">8</span></a>
+            <a class="box" href="bonus.html"><span class="box-number">?</span></a>
+        </div>
+        <div class="instructions-container">
+            <button id="instructions-btn">INSTRUCTIONS</button>
+        </div>
+        <div class="reset-container">
+            <button id="reset-btn">RESET GAME</button>
+        </div>
+        <script src="./js/updateHome.js"></script>
+        <script src="./js/home.js"></script>
+        <div id="confetti-container" style="display:none;">
+            <video id="confetti-video" width="100%" height="100%" autoplay muted>
+              <source src="./img/confetti.mov" type="video/mp4">
+            </video>
+        </div>
+    </body>
+</html>
